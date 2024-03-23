@@ -1,0 +1,91 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
+
+*{
+    margin: 0;
+    padding:0 ;
+    font-family: "Outfit", sans-serif;
+}
+@keyframes fadeInDown {
+    0% {
+      opacity: 0;
+      transform: translateY(-20px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+.sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    animation-duration: 0.5s;
+    animation-name: fadeInDown;
+    animation-timing-function: ease-out;
+  }
+.top-bar{
+    display: flex;
+    height: 106px;
+    justify-content: space-between;
+    padding: 10px 25px;
+    background: #25393C;
+}
+.logo{
+    display: flex;
+}
+.logo img{
+    display: flex;
+    margin-right: 10px;
+}
+nav{
+    background: rgb(201, 206, 209);
+    height: 71;
+    padding: 5px 20px;
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+nav .sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    
+  }
+nav a{
+    color: #44576D ;
+}
+nav a:hover{
+    color: #112b48;
+}
+nav .second-nav{
+    list-style: none;
+    display: flex;
+    align-items: center;
+    margin-left: 80px;
+}
+.second-nav li{
+    padding: 15px 10px;
+    font-size: 20px;
+    align-content: center;
+}
+nav .dropdown{
+    list-style: none;
+    display: flex;
+    align-items: center;
+    margin-left: 80px;
+}
+.dropdown li{
+    padding: 15px 10px;
+    font-size: 20px;
+}
+
+@media screen and (max-width: 600px){
+    nav{
+        display:block;
+        position: relative;
+        padding: 15px 20px;
+    }
+}
+
+
+
